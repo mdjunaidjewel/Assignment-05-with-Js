@@ -13,28 +13,337 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
+<body class="bg-[#f5fff6]">
     
     <main>
         <header>
-            <nav class="w-11/12 mx-auto py-5 flex items-center justify-between">
+            <nav class=" p-3 md:p-0 md:w-11/12 mx-auto md:py-5 sm:flex items-center justify-between">
                 <div>
                     <div class="flex items-center">
-                        <div class="w-14 mr-2"><img class="w-full" src="assets/logo.png" alt="this is logo"></div>
-                        <div><h1 class="font-extrabold text-3xl text-[#006646] leading-8">Emergency <br> Service</h1></div>
+                        <div class=" w-9 sm:w-14 mr-2"><img class="w-full" src="assets/logo.png" alt="this is logo"></div>
+                        <div><h1 class="font-extrabold sm:text-3xl text-[#006646] sm:leading-8 leading-4">Emergency <br> Service</h1></div>
                     </div>
                 </div>
-                <div class="flex justify-between items-center gap-5">
-                    <div class="bg-[#edfff1] w-35 flex items-center justify-center py-3 px-5 rounded-4xl cursor-pointer"><span class="font-bold text-2xl">0</span><img class="w-8 ml-2" src="assets/heart.png" alt=""></div>
-                    <div class="bg-[#edfff1] w-30 flex items-center justify-center py-3 px-5 rounded-4xl cursor-pointer"><span class="font-bold text-2xl">100</span><img class="w-8 ml-2" src="assets/coin.png" alt=""></div>
-                    <div class="bg-[#00a63d] w-31 flex items-center justify-center font-semibold text-xl py-3 px-5 rounded-4xl text-white cursor-pointer"><span>0</span><div class="ml-2">Copy</div></div>
+                <div class="sm:flex justify-between items-center gap-5 my-2">
+                    <div class="bg-[#edfff1] my-2 sm:w-35 flex items-center justify-center gap-2 py-3 px-5 rounded-4xl cursor-pointer"><span class="font-bold text-2xl">0</span><img class="w-7" src="assets/heart.png" alt=""></div>
+                    <div class="bg-[#edfff1] my-2 sm:w-30 flex items-center justify-center gap-2 py-3 px-5 rounded-4xl cursor-pointer"><span class="font-bold text-2xl">100</span><img class="w-7" src="assets/coin.png" alt=""></div>
+                    <div class="bg-[#00a63d] my-2 sm:w-31 flex items-center justify-center gap-2 font-semibold text-xl py-3 px-5 rounded-4xl text-white cursor-pointer"><span class="text-2xl">0</span><div class="text-2xl">Copy</div></div>
                 </div>
             </nav>
         </header>
 
         <!-- Banner Area Start -->
-         
+        <section class="flex flex-col justify-center items-center py-5 px-3 sm:gap-4 gap-1 bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] w-full">
+            <div class="sm:w-20 w-17"><img src="assets/logo-dark.png" alt=""></div>
+            <div><p class=" text-2xl sm:text-4xl font-semibold text-white text-center">জরুরি সেবা ডিরেক্টরি</p></div>
+            <div><p class="text-white font-semibold text-lg sm:text-xl text-center">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p></div>
+        </section>
         <!-- Banner Area End -->
+
+        <!-- This is Cards Area Start -->
+        <section class=" md:w-11/12 mx-auto sm:flex gap-3 md:my-15 my-5">
+            <div class=" p-3 sm:m-0 sm:grid grid-cols-3 gap-4 sm:w-9/12">
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                    <div class="p-5 sm:p-8 w-full">
+                        <div class="flex justify-between items-center">
+                            <div class="bg-[#ffe4e3] p-4 rounded-2xl">
+                                <img class="w-5 sm:w-6" src="assets/emergency.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-5 sm:w-6" src="assets/card-heart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-2 sm:my-3.5">
+                            <h1 class="font-bold sm:text-xl">জাতীয় জরুরি সেবা</h1>
+                            <p class="text-[#5c5c5c]">National Emergency</p>
+                        </div>
+                        <div class="mb-3 sm:mb-5">
+                            <h1 class="font-bold sm:text-2xl">999</h1>
+                            <div class="bg-[#f2f2f2] w-fit rounded-3xl">
+                                <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">সার্বজনীন</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3">
+                            <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </div>
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                                <i class="fa-solid fa-phone text-white "></i>
+                                <p class="text-white">Call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] sm:-h[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                    <div class="p-5 sm:p-8 w-full">
+                        <div class="flex justify-between items-center">
+                            <div class="bg-[#ffe4e3] p-4 rounded-2xl">
+                                <img class="w-5 sm:w-6" src="assets/police.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-5 sm:w-6" src="assets/card-heart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-2 sm:my-3.5">
+                            <h1 class="font-bold sm:text-xl">পুলিশ</h1>
+                            <p class="text-[#5c5c5c]">Police</p>
+                        </div>
+                        <div class="mb-3 sm:mb-5">
+                            <h1 class="font-bold sm:text-2xl">999</h1>
+                            <div class="bg-[#f2f2f2] w-fit rounded-3xl">
+                                <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">পুলিশ</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3">
+                            <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </div>
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                                <i class="fa-solid fa-phone text-white "></i>
+                                <p class="text-white">Call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                    <div class="p-5 sm:p-8 w-full">
+                        <div class="flex justify-between items-center">
+                            <div class="bg-[#ffe4e3] p-4 rounded-2xl">
+                                <img class="w-5 sm:w-6" src="assets/fire-service.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-5 sm:w-6" src="assets/card-heart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-2 sm:my-3.5">
+                            <h1 class="font-bold sm:text-xl">ফায়ার সার্ভিস</h1>
+                            <p class="text-[#5c5c5c]">Fire Service</p>
+                        </div>
+                        <div class="mb-3 sm:mb-5">
+                            <h1 class="font-bold sm:text-2xl">999</h1>
+                            <div class="bg-[#f2f2f2] w-fit rounded-3xl">
+                                <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">ফায়ার</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3">
+                            <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </div>
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                                <i class="fa-solid fa-phone text-white "></i>
+                                <p class="text-white">Call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                    <div class="p-5 sm:p-8 w-full">
+                        <div class="flex justify-between items-center">
+                            <div class="bg-[#ffe4e3] p-4 rounded-2xl">
+                                <img class="w-5 sm:w-6" src="assets/ambulance.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-5 sm:w-6" src="assets/card-heart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-2 sm:my-3.5">
+                            <h1 class="font-bold sm:text-xl">অ্যাম্বুলেন্স</h1>
+                            <p class="text-[#5c5c5c]">Ambulance</p>
+                        </div>
+                        <div class="mb-3 sm:mb-5">
+                            <h1 class="font-bold sm:text-2xl">1994-999999</h1>
+                            <div class="bg-[#f2f2f2] w-fit rounded-3xl">
+                                <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">স্বাস্থ্য</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3">
+                            <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </div>
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                                <i class="fa-solid fa-phone text-white "></i>
+                                <p class="text-white">Call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                    <div class="p-5 sm:p-8 w-full">
+                        <div class="flex justify-between items-center">
+                            <div class="bg-[#ffe4e3] p-4 rounded-2xl">
+                                <img class="w-5 sm:w-6" src="assets/emergency.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-5 sm:w-6" src="assets/card-heart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-2 sm:my-3.5">
+                            <h1 class="font-bold sm:text-xl">নারী ও শিশু সহায়তা</h1>
+                            <p class="text-[#5c5c5c]">Women & Child Helpline</p>
+                        </div>
+                        <div class="mb-3 sm:mb-5">
+                            <h1 class="font-bold sm:text-2xl">109</h1>
+                            <div class="bg-[#f2f2f2] w-fit rounded-3xl">
+                                <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">সহায়তা</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3">
+                            <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </div>
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                                <i class="fa-solid fa-phone text-white "></i>
+                                <p class="text-white">Call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                    <div class="p-5 sm:p-8 w-full">
+                        <div class="flex justify-between items-center">
+                            <div class="bg-[#ffe4e3] p-4 rounded-2xl">
+                                <img class="w-5 sm:w-6" src="assets/emergency.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-5 sm:w-6" src="assets/card-heart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-2 sm:my-3.5">
+                            <h1 class="font-bold sm:text-xl">বিদ্যুৎ বিভ্রাট</h1>
+                            <p class="text-[#5c5c5c]">Electricity Outage</p>
+                        </div>
+                        <div class="mb-3 sm:mb-5">
+                            <h1 class="font-bold sm:text-2xl">16216</h1>
+                            <div class="bg-[#f2f2f2] w-fit rounded-3xl">
+                                <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">বিদ্যুৎ</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3">
+                            <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </div>
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                                <i class="fa-solid fa-phone text-white "></i>
+                                <p class="text-white">Call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                    <div class="p-5 sm:p-8 w-full">
+                        <div class="flex justify-between items-center">
+                            <div class="bg-[#ffe4e3] p-4 rounded-2xl">
+                                <img class="w-5 sm:w-6" src="assets/emergency.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-5 sm:w-6" src="assets/card-heart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-2 sm:my-3.5">
+                            <h1 class="font-bold sm:text-xl">ব্র্যাক</h1>
+                            <p class="text-[#5c5c5c]">Brac</p>
+                        </div>
+                        <div class="mb-3 sm:mb-5">
+                            <h1 class="font-bold sm:text-2xl">16445</h1>
+                            <div class="bg-[#f2f2f2] w-fit rounded-3xl">
+                                <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">এনজিও</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3">
+                            <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </div>
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                                <i class="fa-solid fa-phone text-white "></i>
+                                <p class="text-white">Call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                    <div class="p-5 sm:p-8 w-full">
+                        <div class="flex justify-between items-center">
+                            <div class="bg-[#ffe4e3] p-4 rounded-2xl">
+                                <img class="w-5 sm:w-6" src="assets/emergency.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-5 sm:w-6" src="assets/card-heart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-2 sm:my-3.5">
+                            <h1 class="font-bold sm:text-xl">বাংলাদেশ রেলওয়ে</h1>
+                            <p class="text-[#5c5c5c]">Bangladesh Railway</p>
+                        </div>
+                        <div class="mb-3 sm:mb-5">
+                            <h1 class="font-bold sm:text-2xl">163</h1>
+                            <div class="bg-[#f2f2f2] w-fit rounded-3xl">
+                                <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">পরিবহন</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3">
+                            <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </div>
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                                <i class="fa-solid fa-phone text-white "></i>
+                                <p class="text-white">Call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                    <div class="p-5 sm:p-8 w-full">
+                        <div class="flex justify-between items-center">
+                            <div class="bg-[#ffe4e3] p-4 rounded-2xl">
+                                <img class="w-5 sm:w-6" src="assets/emergency.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-5 sm:w-6" src="assets/card-heart.png" alt="">
+                            </div>
+                        </div>
+                        <div class="my-2 sm:my-3.5">
+                            <h1 class="font-bold sm:text-xl">দুদক</h1>
+                            <p class="text-[#5c5c5c]">Anti-Corruption</p>
+                        </div>
+                        <div class="mb-3 sm:mb-5">
+                            <h1 class="font-bold sm:text-2xl">106</h1>
+                            <div class="bg-[#f2f2f2] w-fit rounded-3xl">
+                                <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">সরকারি</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center gap-3">
+                            <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
+                                <i class="fa-regular fa-copy"></i>
+                                <p>Copy</p>
+                            </div>
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                                <i class="fa-solid fa-phone text-white "></i>
+                                <p class="text-white">Call</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <aside class=" shadow-sm bg-white sm:my-4 rounded-2xl w-[90%] md:w-3/12 mx-auto">
+                <div class="p-7 flex justify-between items-center">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="font-semibold">Call History</p>
+                    </div>
+                <div class="bg-[#00a63d] p-2 cursor-pointer hover:opacity-70 duration-100 rounded-3xl w-20 text-center"><p class="font-semibold text-white">Clear</p></div>
+                </div>
+            </aside>
+        </section>
+        
+        <!-- This is Cards Area End -->
     </main>
 
     <script src="app.js"></script>
