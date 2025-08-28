@@ -26,7 +26,7 @@
                 </div>
                 <div class="sm:flex justify-between items-center gap-5 my-2">
                     <div class="bg-[#edfff1] my-2 sm:w-35 flex items-center justify-center gap-2 py-3 px-5 rounded-4xl cursor-pointer"><span class="font-bold text-2xl" id="heart-parents">0</span><img class="w-7" src="assets/heart.png" alt=""></div>
-                    <div class="bg-[#edfff1] my-2 sm:w-30 flex items-center justify-center gap-2 py-3 px-5 rounded-4xl cursor-pointer"><span class="font-bold text-2xl">100</span><img class="w-7" src="assets/coin.png" alt=""></div>
+                    <div class="bg-[#edfff1] my-2 sm:w-30 flex items-center justify-center gap-2 py-3 px-5 rounded-4xl cursor-pointer"><span id="coin" class="font-bold text-2xl">100</span><img class="w-7" src="assets/coin.png" alt=""></div>
                     <div class="bg-[#00a63d] my-2 sm:w-31 flex items-center justify-center gap-2 font-semibold text-xl py-3 px-5 rounded-4xl text-white cursor-pointer"><span class="text-2xl">0</span><div class="text-2xl">Copy</div></div>
                 </div>
             </nav>
@@ -43,7 +43,7 @@
         <!-- This is Cards Area Start -->
         <section class=" md:w-11/12 mx-auto sm:flex gap-3 md:my-15 my-5">
             <div class=" p-3 sm:m-0 sm:grid grid-cols-3 gap-4 sm:w-9/12">
-                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0 card parent-div">
                     <div class="p-5 sm:p-8 w-full">
                         <div class="flex justify-between items-center">
                             <div class="bg-[#ffe4e3] p-4 rounded-2xl">
@@ -54,11 +54,11 @@
                             </div>
                         </div>
                         <div class="my-2 sm:my-3.5">
-                            <h1 class="font-bold sm:text-xl">জাতীয় জরুরি সেবা</h1>
-                            <p class="text-[#5c5c5c]">National Emergency</p>
+                            <h1 class="font-bold sm:text-xl call-history">জাতীয় জরুরি সেবা</h1>
+                            <p class="text-[#5c5c5c] child">National Emergency</p>
                         </div>
                         <div class="mb-3 sm:mb-5">
-                            <h1 class="font-bold sm:text-2xl">999</h1>
+                            <h1 class="font-bold sm:text-2xl number child call-history">999</h1>
                             <div class="bg-[#f2f2f2] w-fit rounded-3xl">
                                 <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">সার্বজনীন</p>
                             </div>
@@ -68,14 +68,14 @@
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </div>
-                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400 call-btn">
                                 <i class="fa-solid fa-phone text-white "></i>
-                                <p class="text-white">Call</p>
+                                <p class="text-white ">Call</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#ffffff] sm:-h[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                <div class="bg-[#ffffff] sm:-h[22rem] shadow-md rounded-xl mb-3 sm:mb-0 card parent-div">
                     <div class="p-5 sm:p-8 w-full">
                         <div class="flex justify-between items-center">
                             <div class="bg-[#ffe4e3] p-4 rounded-2xl">
@@ -86,11 +86,11 @@
                             </div>
                         </div>
                         <div class="my-2 sm:my-3.5">
-                            <h1 class="font-bold sm:text-xl">পুলিশ</h1>
-                            <p class="text-[#5c5c5c]">Police</p>
+                            <h1 class="font-bold sm:text-xl ">পুলিশ</h1>
+                            <p class="text-[#5c5c5c] child call-history">Police</p>
                         </div>
                         <div class="mb-3 sm:mb-5">
-                            <h1 class="font-bold sm:text-2xl">999</h1>
+                            <h1 class="font-bold sm:text-2xl child call-history">999</h1>
                             <div class="bg-[#f2f2f2] w-fit rounded-3xl">
                                 <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">পুলিশ</p>
                             </div>
@@ -98,16 +98,16 @@
                         <div class="flex justify-between items-center gap-3">
                             <div class="flex items-center justify-center gap-2 w-1/2 border-1 border-[#d4d6d5] rounded-md cursor-pointer p-1 sm:p-2 hover:bg-black hover:text-white duration-300">
                                 <i class="fa-regular fa-copy"></i>
-                                <p>Copy</p>
+                                <p>Copy</p> 
                             </div>
-                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400 call-btn ">
                                 <i class="fa-solid fa-phone text-white "></i>
                                 <p class="text-white">Call</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0 card">
                     <div class="p-5 sm:p-8 w-full">
                         <div class="flex justify-between items-center">
                             <div class="bg-[#ffe4e3] p-4 rounded-2xl">
@@ -119,10 +119,10 @@
                         </div>
                         <div class="my-2 sm:my-3.5">
                             <h1 class="font-bold sm:text-xl">ফায়ার সার্ভিস</h1>
-                            <p class="text-[#5c5c5c]">Fire Service</p>
+                            <p class="text-[#5c5c5c] child">Fire Service</p>
                         </div>
                         <div class="mb-3 sm:mb-5">
-                            <h1 class="font-bold sm:text-2xl">999</h1>
+                            <h1 class="font-bold sm:text-2xl child">999</h1>
                             <div class="bg-[#f2f2f2] w-fit rounded-3xl">
                                 <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">ফায়ার</p>
                             </div>
@@ -132,14 +132,14 @@
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </div>
-                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400 call-btn">
                                 <i class="fa-solid fa-phone text-white "></i>
                                 <p class="text-white">Call</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0 card">
                     <div class="p-5 sm:p-8 w-full">
                         <div class="flex justify-between items-center">
                             <div class="bg-[#ffe4e3] p-4 rounded-2xl">
@@ -151,10 +151,10 @@
                         </div>
                         <div class="my-2 sm:my-3.5">
                             <h1 class="font-bold sm:text-xl">অ্যাম্বুলেন্স</h1>
-                            <p class="text-[#5c5c5c]">Ambulance</p>
+                            <p class="text-[#5c5c5c] child">Ambulance</p>
                         </div>
                         <div class="mb-3 sm:mb-5">
-                            <h1 class="font-bold sm:text-2xl">1994-999999</h1>
+                            <h1 class="font-bold sm:text-2xl child">1994-999999</h1>
                             <div class="bg-[#f2f2f2] w-fit rounded-3xl">
                                 <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">স্বাস্থ্য</p>
                             </div>
@@ -164,14 +164,14 @@
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </div>
-                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400 call-btn">
                                 <i class="fa-solid fa-phone text-white "></i>
                                 <p class="text-white">Call</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0 card">
                     <div class="p-5 sm:p-8 w-full">
                         <div class="flex justify-between items-center">
                             <div class="bg-[#ffe4e3] p-4 rounded-2xl">
@@ -183,10 +183,10 @@
                         </div>
                         <div class="my-2 sm:my-3.5">
                             <h1 class="font-bold sm:text-xl">নারী ও শিশু সহায়তা</h1>
-                            <p class="text-[#5c5c5c]">Women & Child Helpline</p>
+                            <p class="text-[#5c5c5c] child">Women & Child Helpline</p>
                         </div>
                         <div class="mb-3 sm:mb-5">
-                            <h1 class="font-bold sm:text-2xl">109</h1>
+                            <h1 class="font-bold sm:text-2xl child">109</h1>
                             <div class="bg-[#f2f2f2] w-fit rounded-3xl">
                                 <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">সহায়তা</p>
                             </div>
@@ -196,14 +196,14 @@
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </div>
-                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400 call-btn">
                                 <i class="fa-solid fa-phone text-white "></i>
                                 <p class="text-white">Call</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0 card">
                     <div class="p-5 sm:p-8 w-full">
                         <div class="flex justify-between items-center">
                             <div class="bg-[#ffe4e3] p-4 rounded-2xl">
@@ -215,10 +215,10 @@
                         </div>
                         <div class="my-2 sm:my-3.5">
                             <h1 class="font-bold sm:text-xl">বিদ্যুৎ বিভ্রাট</h1>
-                            <p class="text-[#5c5c5c]">Electricity Outage</p>
+                            <p class="text-[#5c5c5c] child">Electricity Outage</p>
                         </div>
                         <div class="mb-3 sm:mb-5">
-                            <h1 class="font-bold sm:text-2xl">16216</h1>
+                            <h1 class="font-bold sm:text-2xl child">16216</h1>
                             <div class="bg-[#f2f2f2] w-fit rounded-3xl">
                                 <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">বিদ্যুৎ</p>
                             </div>
@@ -228,14 +228,14 @@
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </div>
-                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400 call-btn">
                                 <i class="fa-solid fa-phone text-white "></i>
                                 <p class="text-white">Call</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0 card">
                     <div class="p-5 sm:p-8 w-full">
                         <div class="flex justify-between items-center">
                             <div class="bg-[#ffe4e3] p-4 rounded-2xl">
@@ -247,10 +247,10 @@
                         </div>
                         <div class="my-2 sm:my-3.5">
                             <h1 class="font-bold sm:text-xl">ব্র্যাক</h1>
-                            <p class="text-[#5c5c5c]">Brac</p>
+                            <p class="text-[#5c5c5c] child">Brac</p>
                         </div>
                         <div class="mb-3 sm:mb-5">
-                            <h1 class="font-bold sm:text-2xl">16445</h1>
+                            <h1 class="font-bold sm:text-2xl child">16445</h1>
                             <div class="bg-[#f2f2f2] w-fit rounded-3xl">
                                 <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">এনজিও</p>
                             </div>
@@ -260,14 +260,14 @@
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </div>
-                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400 call-btn">
                                 <i class="fa-solid fa-phone text-white "></i>
                                 <p class="text-white">Call</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0 card">
                     <div class="p-5 sm:p-8 w-full">
                         <div class="flex justify-between items-center">
                             <div class="bg-[#ffe4e3] p-4 rounded-2xl">
@@ -279,10 +279,10 @@
                         </div>
                         <div class="my-2 sm:my-3.5">
                             <h1 class="font-bold sm:text-xl">বাংলাদেশ রেলওয়ে</h1>
-                            <p class="text-[#5c5c5c]">Bangladesh Railway</p>
+                            <p class="text-[#5c5c5c] child">Bangladesh Railway</p>
                         </div>
                         <div class="mb-3 sm:mb-5">
-                            <h1 class="font-bold sm:text-2xl">163</h1>
+                            <h1 class="font-bold sm:text-2xl child">163</h1>
                             <div class="bg-[#f2f2f2] w-fit rounded-3xl">
                                 <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">পরিবহন</p>
                             </div>
@@ -292,14 +292,14 @@
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </div>
-                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400 call-btn">
                                 <i class="fa-solid fa-phone text-white "></i>
                                 <p class="text-white">Call</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0">
+                <div class="bg-[#ffffff] sm:h-[22rem] shadow-md rounded-xl mb-3 sm:mb-0 card">
                     <div class="p-5 sm:p-8 w-full">
                         <div class="flex justify-between items-center">
                             <div class="bg-[#ffe4e3] p-4 rounded-2xl">
@@ -311,10 +311,10 @@
                         </div>
                         <div class="my-2 sm:my-3.5">
                             <h1 class="font-bold sm:text-xl">দুদক</h1>
-                            <p class="text-[#5c5c5c]">Anti-Corruption</p>
+                            <p class="text-[#5c5c5c] child">Anti-Corruption</p>
                         </div>
                         <div class="mb-3 sm:mb-5">
-                            <h1 class="font-bold sm:text-2xl">106</h1>
+                            <h1 class="font-bold sm:text-2xl child">106</h1>
                             <div class="bg-[#f2f2f2] w-fit rounded-3xl">
                                 <p class="text-[#5c5c5c] py-1 px-2.5 sm:py-1.5 sm:px-4">সরকারি</p>
                             </div>
@@ -324,7 +324,7 @@
                                 <i class="fa-regular fa-copy"></i>
                                 <p>Copy</p>
                             </div>
-                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400">
+                            <div class="bg-[#00a63d] flex items-center justify-center gap-2 w-1/2 rounded-md cursor-pointer p-1 sm:p-2 hover:opacity-70 duration-400 call-btn">
                                 <i class="fa-solid fa-phone text-white "></i>
                                 <p class="text-white">Call</p>
                             </div>
@@ -338,8 +338,9 @@
                         <i class="fa-solid fa-clock"></i>
                         <p class="font-semibold">Call History</p>
                     </div>
-                <div class="bg-[#00a63d] p-2 cursor-pointer hover:opacity-70 duration-100 rounded-3xl w-20 text-center"><p class="font-semibold text-white">Clear</p></div>
+                <div id="clear-btn" class="bg-[#00a63d] p-2 cursor-pointer hover:opacity-70 duration-100 rounded-3xl w-20 text-center"><p class="font-semibold text-white">Clear</p></div>
                 </div>
+                <div id="history-container" class="px-5 ">Hi</div>
             </aside>
         </section>
         
