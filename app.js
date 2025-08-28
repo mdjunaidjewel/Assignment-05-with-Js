@@ -35,13 +35,18 @@ callBtns.forEach(btn => {
 
         const type = childDivs[0].textContent;
         const name = childDivs[1].textContent;
-        console.log(type,name)
 
-        const now = new Date();
-        const currentTime = now.toLocaleTimeString(); 
+        let now = new Date();
+        let currentTime = now.toLocaleTimeString(); 
 
-        const historyItem = document.createElement('p');
-        historyItem.textContent = `${type} - ${name} ${currentTime}`;
+        const historyItem = document.createElement('div');
+        historyItem.innerHTML = `
+        
+        <div style="display:flex; justify-content:space-between; align-items:center;"> <div><div style="font-weight: 600; font-size:14px;">${type}</div> <div style="font-weight: 500;">${name}</div> </div> ${currentTime}</div>
+        
+        
+        `;
+        historyItem.classList.add("bg-[#f2f2f2]","p-2","rounded-md","my-2");
         historyContainer.appendChild(historyItem);
 
     });
