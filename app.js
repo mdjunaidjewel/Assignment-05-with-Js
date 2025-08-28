@@ -46,7 +46,7 @@ callBtns.forEach(btn => {
         
         
         `;
-        historyItem.classList.add("bg-[#f2f2f2]","p-2","rounded-md","my-2");
+        historyItem.classList.add("bg-[#f2f2f2]","p-3","rounded-md","my-2");
         historyContainer.appendChild(historyItem);
 
     });
@@ -59,5 +59,33 @@ clearBtn.addEventListener('click', function() {
         document.getElementById('history-container').innerHTML = '';
         // alert("সব কল হিস্টরি মুছে ফেলা হয়েছে!");
  });
+
+
+//  this is the part of copy btn
+
+const copyBtns = document.querySelectorAll('.copy-btn');
+copyBtns.forEach( copybtn => {
+    copybtn.addEventListener('click',function(){
+        document.getElementById('copyIcon').innerText++;
+        const cards = this.closest('.card');
+        const childNumber = cards.querySelectorAll('.number');
+        let content = '';
+
+        childNumber.forEach(child => {
+            content += child.innerText;
+        })
+        alert("নম্বরটি কপি হয়েছে:" + " "+ content);
+
+        // ✅ পুরনো পদ্ধতি: কপি করার জন্য temporary textarea তৈরি
+        const tempInput = document.createElement("textarea");
+        tempInput.value = content;
+        document.body.appendChild(tempInput);
+        tempInput.select();
+        tempInput.setSelectionRange(0, 99999);
+        document.execCommand('copy');
+        document.body.removeChild(tempInput);
+    });
+    
+});
 
 
