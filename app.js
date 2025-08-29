@@ -19,7 +19,7 @@ callBtns.forEach(btn => {
         document.getElementById('coin').innerText = newCoin;
         if ( newCoin < 0){
             document.getElementById('coin').innerText = 0;
-            return alert("X আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০-কয়েন লাগবে'।")
+            return alert("❌ আপনার পর্যাপ্ত কয়েন নেই! কল করতে কমপক্ষে ২০-কয়েন লাগবে।")
         }
         const cards = this.closest('.card');
         const childrens = cards.querySelectorAll('.child');
@@ -27,7 +27,7 @@ callBtns.forEach(btn => {
         childrens.forEach(child =>{
             allContent += child.innerText += " ";
         })
-        alert("Calling"+ allContent +"...");
+        alert("📞 Calling "+ allContent +"...");
 
         const parentDiv = this.closest('.parent-div');
         const childDivs = parentDiv.querySelectorAll('.call-history');
